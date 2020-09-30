@@ -82,6 +82,15 @@ body{
 	width: 300px;
 	/* height: 200px; */
 }
+.portfolio__item:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    box-shadow: 0 8px 10px 4px rgba(0,0,0,0.5);
+}
+.portfolio__item:hover > img{
+    transform: scale(0.95);
+    transition: transform 0.5s;
+}
 
 .portfolio__item img{
 	width: 100%;
