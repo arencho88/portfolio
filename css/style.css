@@ -17,9 +17,21 @@ body{
 
 /* header ========================== */
 .header{
-	background: url('../img/bg.jpg') center center/cover no-repeat;
-	background-attachment: fixed;
+	/* background: url('../img/bg.jpg') center center/cover no-repeat;
+	background-attachment: fixed; */
 	height: 60vh;
+}
+
+.header::after{
+	content: '';
+	position: fixed;
+	width: 100%;
+	height: 60vh;
+	background: url(../img/bg.jpg) center center no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .header__inner{
